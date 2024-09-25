@@ -22,7 +22,7 @@ weatherform.addEventListener('submit',(event)=>{
             if(data.error)
             console.log(data.error)
             else{
-                console.log(data)
+                
                 date.textContent = day + '-' + month + '-' + year + ' ' +  weekday[temp.getDay()]
                 forecast.textContent='Forecast: ' + data.forecast.Forecast 
                 Temperature.textContent=data.forecast.Temperature + '°C'
